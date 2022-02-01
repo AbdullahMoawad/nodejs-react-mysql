@@ -1,0 +1,1 @@
+export  type TypeCompanyConnectionStatus ='accepted'|'rejected'|'pending'

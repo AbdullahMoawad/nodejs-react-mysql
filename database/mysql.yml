@@ -1,0 +1,13 @@
+mysql:
+  image: 'mysql:latest'
+  container_name: magnitt_mysql
+  hostname: magnitt_mysql
+  ports:
+    - '3306:3306'
+  restart: always
+  cap_add:
+    - SYS_NICE
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABASE: magnitt
+
